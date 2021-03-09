@@ -5,7 +5,7 @@ ruby '2.7.2'
 
 gem 'rails', '~> 6.1.3'
 
-gem 'sqlite3', '~> 1.4'
+
 gem 'puma', '~> 5.0'
 gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 5.0'
@@ -22,6 +22,11 @@ end
 group :development do
   gem 'web-console', '>= 4.1.0'
   gem 'rack-mini-profiler', '~> 2.0'
+  gem 'sqlite3', '~> 1.4'
+end
+
+group :production do
+  gem 'pg', '~> 0.18.4'
 end
 
 group :test do
